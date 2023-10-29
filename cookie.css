@@ -1,0 +1,119 @@
+body {
+    padding-top: 30px;
+    font-family: Arial;
+    background-color: lightblue;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+    display: block;
+    margin: 5px;
+}
+
+/* Overskrifterne */
+#titles {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#inventorySection {
+    margin-right: auto;
+    padding-right: 200px;
+}
+
+#shopSection {
+    margin-right: auto;
+    padding-left: 200px;
+}
+#titel {
+    margin-right: auto;
+}
+
+#mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 150px; /* Optional, for some space between drum and the shop */
+
+}
+
+#inventory {
+    margin-right: auto;
+    padding-right:px;
+}
+
+#inventoryList {
+
+}
+
+#drum {
+    position: relative; /* Add this line */
+    border: 8px solid firebrick;
+    width: 280px;
+    text-align: center;
+    background-color: ghostwhite;
+    margin: 0; /* Ensure no margin pushes it away */
+}
+
+#drum img {
+    transition: transform 0.2s;
+}
+
+#drum img:first-child { /* The GIF image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%; /* Set to the width of the drum container */
+}
+
+#drum img:last-child { /* The drum image */
+    z-index: 2;
+    position: relative; /* Added to ensure it's above the gif */
+}
+
+#drum img.tilt-left {
+    transform: rotate(-10deg);
+}
+
+#drum img.tilt-right {
+    transform: rotate(10deg);
+}
+
+/* Købe menuen */
+#instrumentsScore {
+    display: flex;
+    flex-direction: row; /* To align the instrument shop items vertically */
+}
+
+/* inventory */
+#inventoryList {
+    display: flex;
+    flex-direction: row;
+}
+
+#guitar img {
+    width: 40px;  /* Adjust as desired */
+    height: auto;
+}
+
+#trumpet img {
+    width: 40px;  /* Adjust as desired */
+    height: auto;
+}
+
+.iconStyle {
+    width: 40px;
+    height:auto;
+}
